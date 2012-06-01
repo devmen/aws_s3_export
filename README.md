@@ -17,7 +17,7 @@ Or install it yourself as:
 
 ## Usage
 
-creat file export.rb and pust code below
+creat file export.rb and paste code below:
 
     #simple script for usage
     require 'rubygems'

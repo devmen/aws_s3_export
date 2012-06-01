@@ -32,24 +32,24 @@ creat file export.rb and pust code below
 Run from console: $ ruby export.rb
 And you should will see:
 
-  Work in .
-  Work in ..
-  Work in 1
-  File '1/large/IMG_0298.JPG' has saved
-  File '1/medium/IMG_0298.JPG' has saved
-  File '1/micro/IMG_0298.JPG' has saved
-  File '1/original/IMG_0298.JPG' has saved
-  File '1/slide_Show/IMG_0298.JPG' has saved
-  File '1/small/IMG_0298.JPG' has saved
-  File '1/small_149/IMG_0298.JPG' has saved
-  File '1/smaller/IMG_0298.JPG' has saved
-  Work in 11
-  File '11/large/IMG_3518.JPG' has saved
-  File '11/medium/IMG_3518.JPG' has saved
-  File '11/micro/IMG_3518.JPG' has saved
-  File '11/original/IMG_3518.JPG' has saved
-  File '11/slide_Show/IMG_3518.JPG' has saved
-  File '11/small/IMG_3518.JPG' has saved
+    Work in .
+    Work in ..
+    Work in 1
+    File '1/large/IMG_0298.JPG' has saved
+    File '1/medium/IMG_0298.JPG' has saved
+    File '1/micro/IMG_0298.JPG' has saved
+    File '1/original/IMG_0298.JPG' has saved
+    File '1/slide_Show/IMG_0298.JPG' has saved
+    File '1/small/IMG_0298.JPG' has saved
+    File '1/small_149/IMG_0298.JPG' has saved
+    File '1/smaller/IMG_0298.JPG' has saved
+    Work in 11
+    File '11/large/IMG_3518.JPG' has saved
+    File '11/medium/IMG_3518.JPG' has saved
+    File '11/micro/IMG_3518.JPG' has saved
+    File '11/original/IMG_3518.JPG' has saved
+    File '11/slide_Show/IMG_3518.JPG' has saved
+    File '11/small/IMG_3518.JPG' has saved
 
 If set prefix then in bucket you will have
   prefix_name/1/large/IMG_0298.JPG

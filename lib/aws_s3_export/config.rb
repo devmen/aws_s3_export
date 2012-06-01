@@ -32,7 +32,7 @@ module AwsS3Export
 
     private
     def validation_options
-      Array.new(:access_key, :secret_access_key, :bucket_name)
+      [ :access_key, :secret_access_key, :bucket_name ]
     end
 
   end

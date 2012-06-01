@@ -1,3 +1,6 @@
+$LOAD_PATH.push File.expand_path("../../lib", __FILE__)
+
+require "rubygems"
 require 'aws-sdk'
 require "aws_s3_export/version"
 require "aws_s3_export/config"

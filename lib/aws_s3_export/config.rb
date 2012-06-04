@@ -28,6 +28,7 @@ module AwsS3Export
       @export_dir = options[:export_dir] || "./" # the current directory
       @bucket_name = options[:bucket_name]
       @prefix = options[:prefix] || ""
+      @rewrite_existing_files = options[:rewrite_existing_files] || false 
     end
 
     private

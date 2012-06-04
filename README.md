@@ -30,13 +30,13 @@ creat file export.rb and paste code below:
     s3.run
 
 Run from console: $ ruby export.rb
-And you should will see:
+And you should will see something like this:
 
     Work in .
     Work in ..
     Work in 1
     File '1/large/IMG_0298.JPG' has saved
-    File '1/medium/IMG_0298.JPG' has saved
+    File '1/medium/IMG_0298.JPG' has savd
     File '1/micro/IMG_0298.JPG' has saved
     File '1/original/IMG_0298.JPG' has saved
     File '1/slide_Show/IMG_0298.JPG' has saved
@@ -53,6 +53,7 @@ And you should will see:
 
 If set prefix then in bucket you will have
   prefix_name/1/large/IMG_0298.JPG
+
 
 ## Contributing
 

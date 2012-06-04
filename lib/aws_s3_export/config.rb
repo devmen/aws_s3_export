@@ -8,13 +8,16 @@ module AwsS3Export
   # :bucket_name - name of bucket s3
   # :access_key - access key id of s3
   # :secret_access_key - secret access key of s3
+  # :rewrite_existing_files - if you want to rewrite set as true
+  # :acl - access controll like in http://docs.amazonwebservices.com/AWSRubySDK/latest/AWS/S3/S3Object.html#write-instance_method in aws-sdk 
+  # default as public_read
   #
   # Get config for example the export_dir:
   # s3_config.export_dir #=> /your/dir/
   #
 
   class Config
-    attr_reader :access_key, :secret_access_key, :export_dir, :bucket_name, :prefix
+    attr_reader :access_key, :secret_access_key, :export_dir, :bucket_name, :prefix, :rewrite_existing_files, :acl
 
     def initialize(options = {})
       validation_options.each do |o|
@@ -29,6 +32,7 @@ module AwsS3Export
       @bucket_name = options[:bucket_name]
       @prefix = options[:prefix] || ""
       @rewrite_existing_files = options[:rewrite_existing_files] || false 
+      @acl = options[:acl] || :public_read 
     end
 
     private

@@ -67,21 +67,24 @@ module AwsS3Export
 
     private
     def save_file(file)
+
       if !@config.prefix.empty?
         prefix = "#{@config.prefix}/"
       else
         prefix = ""
       end
+
       # Grab a reference to an object in the bucket with the name we require
       object = @bucket.objects["#{prefix}#{file}"]
       
       #overwrite file?
       if object.exists? and !@config.rewrite_existing_files
+        puts "Skip writing file '#{file}'. If you want to rewrete file set option 'rewrite_existing_files' to true"
         return
       end
 
       # Write a local file to the aforementioned object on S3
-      if object.write(:file => File.expand_path( file, @config.export_dir ))
+      if object.write(:file => File.expand_path(file, @config.export_dir), :acl => @config.acl)
         puts "File '#{file}' has saved"
       else
         puts "Somthing wrong! File '#{file}' not save"
